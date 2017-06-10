@@ -173,6 +173,11 @@ void drawPlot(GPlot plot) {
 
 void resetDisplay() { // wipe all the data on the screen, and reset the vars for the graph
   background(30, 30, 30);
+  for (int i = 0; i < lastVars.length; i++) { 
+     lastVars[i] = 0; 
+  }
+  warnTime = false;
+  nozzelMelt = false;
   //drawTarget();
   //plotAxes();
   drawReset();
